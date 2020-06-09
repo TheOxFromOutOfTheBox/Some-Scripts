@@ -9,6 +9,6 @@ Requirements: Python version 3.6+
 
 3)*Https-Everywhere extension* must be Enabled in Browser
 
-4)Enable DNS over HTTPS in Firefox Settings
+4)Enable DNS over HTTPS in Firefox Settings(Enable CloudFlare DNS)
 
 Execution Command: `python webscraper.py`
