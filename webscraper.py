@@ -4,15 +4,19 @@ import requests
 import pyperclip as pcp
 from qbittorrent import Client
 from bs4 import BeautifulSoup as soup
-qb=Client('http://127.0.0.1:8080/')
+import time
+qb=Client('http://127.0.0.1:8081/')
 qb.login()
 cont='y'
 while cont=='y':
     obj=input('What are you searching for?')
     obj=obj.replace(' ','+')
-    url='https://www.1377x.to/search/'
-    headers={'User-Agent':'Mozilla/5.0 (X11; OpenBSD i386; rv:72.0) Gecko/20100101 Firefox/72.0'}
+    url='https://1337x.unblockit.one/search/'
+    headers={'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0'}
+    print('{}{}/1/'.format(url,obj))
     request1=requests.get('{}{}/1/'.format(url,obj))
+    print(request1)
+    time.sleep(5)
     soup1=soup(request1.text,'lxml')
     #print(soup.prettify())
     tr=soup1.find_all('tr')
@@ -37,7 +41,11 @@ while cont=='y':
         continue
     newurl='https://www.1377x.to'
     search=newurl+links[which-1]
-    request2=requests.get(search)
+    try:
+        request2=requests.get(search)
+    except:
+        print("Sorry!,Connection Error.Please try again")
+        exit(1)
     soup2=soup(request2.text,'lxml')
     all_links=[]
     all_a=soup2.find_all('a')
