@@ -1,5 +1,3 @@
-#from selenium import webdriver
-#browser=webdriver.Chrome("E:\DOWNLOADS\chromedriver_win32\chromedriver")
 import requests
 import pyperclip as pcp
 from qbittorrent import Client
@@ -13,9 +11,9 @@ while cont=='y':
     obj=obj.replace(' ','+')
     url='https://1337x.unblockit.one/search/'
     headers={'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0'}
-    print('{}{}/1/'.format(url,obj))
+    #print('{}{}/1/'.format(url,obj))
     request1=requests.get('{}{}/1/'.format(url,obj))
-    print(request1)
+    #print(request1)
     time.sleep(5)
     soup1=soup(request1.text,'lxml')
     #print(soup.prettify())
