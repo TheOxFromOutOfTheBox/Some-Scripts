@@ -8,7 +8,7 @@ qb=Client('http://127.0.0.1:8080/')
 qb.login()
 cont='y'
 while cont=='y':
-    obj=input('What are you searching for?')
+    obj=input('Which topic are you searching for?')
     obj=obj.replace(' ','+')
     url='https://www.1337x.to/search/'
     headers={'User-Agent':'Mozilla/5.0 (X11; OpenBSD i386; rv:72.0) Gecko/20100101 Firefox/72.0'}
