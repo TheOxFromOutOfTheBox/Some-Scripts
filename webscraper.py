@@ -7,7 +7,8 @@ qb=Client('http://127.0.0.1:8081/')
 qb.login()
 cont='y'
 while cont=='y':
-    obj=input('Which topic are you searching for?')
+    print("script start")
+    obj=input('Which topic are you searching for? ')
     obj=obj.replace(' ','+')
     url='https://1337x.unblockit.one/search/'
     headers={'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0'}
