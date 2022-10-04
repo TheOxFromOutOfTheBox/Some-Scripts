@@ -1,4 +1,5 @@
 import requests
+import os
 import pyperclip as pcp
 from qbittorrent import Client
 from bs4 import BeautifulSoup as soup
