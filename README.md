@@ -1,14 +1,14 @@
 ## A CLI Interface to fetch torrent links from 1337x (Built using Python)
 
-Steps to Run Script:-
+### Steps to Run Script
 Requirements: Python version 3.6+
 
-1) Torrent Client Required: **qBittorent**
+<ol>
+  <li> Torrent Client Required: <b> **qBittorent** </b> </li>
+  <li> Browser: <b> **Firefox** </b> </li>
+  <li> *https-Everywhere extension* must be Enabled in Browser </li>
+  <li> Enable DNS over HTTPS in Firefox Settings(Enable CloudFlare DNS) </li>
+<ol>
 
-2) Browser: **Firefox**
-
-3) *Https-Everywhere extension* must be Enabled in Browser
-
-4) Enable DNS over HTTPS in Firefox Settings(Enable CloudFlare DNS)
-
-Execution Command: `python webscraper.py`
+### How to execute?
+`python {filename}.py` also you can use `python3 {filename}.py`
