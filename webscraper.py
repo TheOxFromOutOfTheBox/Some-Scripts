@@ -58,9 +58,6 @@ while cont=='y':
     for item in no_copy_links:
         if 'magnet' in item:
             magnet_link=item
-#    print(magnet_link)
-#    pcp.copy(magnet_link)
     qb.download_from_link(magnet_link)
     print('We have added it to your qb.')
     cont=input('Do you want to continue?(y/n)')
-    #print(soup2.title)
