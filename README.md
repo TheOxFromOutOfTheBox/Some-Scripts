@@ -13,4 +13,4 @@ Requirements: Python version 3.6+
 ### How to execute?
 `python {filename}.py` also you can use `python3 {filename}.py`
 
-  ### A CLI Interface
+  ### A CLI Interface is useful to fetch the torrent
